@@ -1,0 +1,8 @@
+{
+    "username": "example",
+    "apiKey": "exampleApiKey",
+    "zone": "example.com",
+    "records": [
+        "subdomain.example.com"
+    ]
+}
