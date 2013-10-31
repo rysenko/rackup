@@ -38,7 +38,7 @@ request('http://myexternalip.com/raw', function (err, res, body) {
             }
             var updates = [];
             records.forEach(function (record) {
-                if (config.records.indexOf(record.name) !== -1) {
+                if (config.records.indexOf(record.name) !== -1 && record.type === 'A' && record.data !== ip) {
                     record.data = ip;
                     updates.push(function (callback) {
                         client.updateRecord(zone.id, record, callback);
