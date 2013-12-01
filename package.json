@@ -4,6 +4,7 @@
   "dependencies": {
     "pkgcloud": "git+ssh://git@github.com:rysenko/pkgcloud.git",
     "async": "~0.2.9",
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "winston": "~0.7.2"
   }
 }
